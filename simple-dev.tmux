@@ -45,7 +45,3 @@ tmux set -g status-right "$RESET$git_status$wb_git_status$datetime"
 if [ "$(tmux show-option -gv @simple-dev-tmux_transparent 2>/dev/null)" != 1 ]; then
 tmux set -ag status-right "#[fg=${THEME[background]},bg=${THEME[black]}]"
 fi
-
-
-
-
